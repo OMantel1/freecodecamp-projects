@@ -1,0 +1,51 @@
+:root {
+    --main-color: rgb(31, 0, 0);
+    --text-color: White;
+}
+
+body {
+    background-color: rgb(118, 125, 153);
+    color: var(--main-color);
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+
+}
+
+#title {
+    font-size: 42px;
+    padding: 0;
+    margin: 0;
+}
+
+#description {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    padding-bottom: 32px;
+}
+
+div {
+    display: grid;
+    padding: 8px;
+}
+
+form {
+    width: 75vw;
+    margin: auto;
+}
+
+form {
+    display: grid;
+}
+
+button {
+    width: 10vw;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 8px;
+}

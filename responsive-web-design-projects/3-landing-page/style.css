@@ -1,0 +1,227 @@
+:root {
+    --main-color: rgb(231, 231, 231);
+    --text-color: White;
+    --link-color: rgb(168, 168, 168);
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+    color: var(--main-color);
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+/*** Adjust anchor offest ***/ 
+#features::before, #media::before {
+    content: '';
+    display: block;
+    height:      75px;
+    margin-top: -75px;
+    visibility: hidden;
+  }
+
+
+/*** = Header ***/
+
+header {
+    background: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    border-bottom: solid rgb(98, 98, 98) 1px;
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+#header-img {
+    width: 55px;
+    filter: invert(95%);
+    transform: rotate(-50deg)
+}
+
+#header-title {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2em;
+}
+
+#nav-bar>a {
+    color: var(--main-color);
+    text-decoration: none;
+    padding-left: 16px;
+    font-size: 1.4em;
+
+}
+
+#nav-bar>a:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+
+@media (max-width: 650px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #nav-bar {
+        margin-top: 32px;
+    }
+
+}
+
+
+
+/*** = form ***/
+.form-box {
+    text-align: center;
+    padding-bottom: 32px;
+    font-size: 1.6em;
+}
+
+.form-box form {
+    display: grid;
+    grid-template-columns: 250px;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+/*** = features ***/
+.fas,
+.far {
+    color: rgb(255, 255, 101);
+    font-size: 24px;
+}
+
+#features {
+    width: 55%;
+    margin: auto;
+    font-size: 1.6em;
+}
+
+#features p,
+h3 {
+    padding: 0;
+    margin: 0;
+    
+}
+
+#features p {
+    font-size: 14px;
+}
+
+#features>div {
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+@media (max-width: 650px) {
+    #features {
+        width: 90%;
+        margin: auto;
+        font-size: 1.6em;
+    }
+
+}
+
+
+/*** = media ***/
+#media
+ {
+    text-align: center;
+}
+iframe {
+    max-width: 75%;
+}
+
+
+@media (max-width: 650px) {
+    iframe {
+        max-width: 95%;
+    }
+
+}
+
+
+/*** = store ***/
+.store {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.store-items {
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 8px;
+    width: 230px;
+    border: solid rgb(98, 98, 98) 1px;
+}
+
+.store-items h2 {
+    color: rgb(255, 255, 101);
+}
+
+
+@media (max-width: 650px) {
+
+    .store {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6em;
+    }
+
+    .store-items {
+        box-sizing: border-box;
+        border: solid rgb(98, 98, 98) 1px;
+    }
+
+}
+
+
+/*** = footer ***/
+#footer {
+    text-align: center;
+    padding-top: 16px;
+    border-top: solid rgb(98, 98, 98) 1px;
+
+}
+
+#footer a {
+    color: var(--main-color);
+    padding: 16px;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+}
+
+
+/*** = Global padding ***/
+header, .form-box, #features, #media, .store{
+    margin-bottom: 64px;
+}
+
